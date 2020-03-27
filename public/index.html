@@ -40,16 +40,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <script type="text/javascript">
-      var LHCChatOptions = {};
-      LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'webforsupport.herokuapp.com'};
+    <script>var LHC_API = LHC_API||{};
+      LHC_API.args = {mode:'widget',lhc_base_url:'//wisetalk.space/',wheight:450,wwidth:350,pheight:520,pwidth:500,domain:'chumakovvchuma.github.io/chatwise/build/index.html',fresh:true,leaveamessage:true,department:[1],theme:1,lang:'rus/'};
       (function() {
       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
-      var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-      po.src = 'https://13.48.47.125/index.php/rus/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true/(department)/1/(disable_pro_active)/true/(theme)/1?r='+referrer+'&l='+location;
+      var date = new Date();po.src = 'https://wisetalk.space/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
-    </script>
+      </script>
   </body>
 </html>

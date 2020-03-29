@@ -8,34 +8,11 @@
 <body style="background: green;">
 
 
-    <script type="text/javascript">
-        var LHCChatOptions = {};
-        LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'chumakovvchuma.github.io'};
+    <script>var LHC_API = LHC_API||{};
+        LHC_API.args = {mode:'widget',lhc_base_url:'//wisetalk.space/index.php/',wheight:450,wwidth:350,pheight:520,pwidth:500,fresh:true,department:[1],proactive:false,lang:'rus/'};
         (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
-        var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-        po.src = 'https://wisetalk.space/rus/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(operator)/1/(theme)/1?r='+referrer+'&l='+location;
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-        </script>
-    <!-- Поместите тег там, где должен выводиться статус Live Helper -->
-<div id="lhc_status_container_page" ></div>
-
-<!-- Поместите этот тег после тега статуса Live Helper -->
-<script>var LHC_API = LHC_API||{};
-LHC_API.args = {mode:'embed',lhc_base_url:'//wisetalk.space/',wheight:450,wwidth:350,pheight:520,pwidth:500,domain:'chumakovvchuma.github.io',fresh:true,department:[1],theme:1,lang:'rus/'};
-(function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-var date = new Date();po.src = 'https://wisetalk.space/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script>
-    <script type="text/javascript">
-        var LHCChatboxOptions = {hashchatbox:'empty',identifier:'default',status_text:'Чатбокс'};
-        (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://wisetalk.space/rus/chatbox/getstatus/(position)/bottom_right/(top)/300/(units)/pixels/(width)/300/(theme)/1/(height)/300/(chat_height)/220/(sc)/true';
+        var date = new Date();po.src = '//wisetalk.space/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
         </script>

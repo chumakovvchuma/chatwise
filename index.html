@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body style="background: green;">
+<!-- Поместите тег там, где должен выводиться модуль Live Helper -->
+<div id="lhc_status_container_page" ></div>
+
+<!-- Поместите этот тег после тега модуля Live Helper -->
+<script type="text/javascript">
+var LHCChatOptionsPage = {'height':300,'mobile':false};
+LHCChatOptionsPage.opt = {};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//wisetalk.space/index.php/rus/chat/getstatusembed/(department)/2?r='+referrer+'&l='+location;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+
+
+
     <script type="text/javascript">
         var LHCChatboxOptions = {hashchatbox:'empty',identifier:'default',status_text:'green'};
         (function() {

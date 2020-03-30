@@ -6,33 +6,6 @@
     <title>Document</title>
 </head>
 <body style="background: green;">
-<!-- Поместите тег там, где должен выводиться модуль Live Helper -->
-<div id="lhc_status_container_page" ></div>
-
-<!-- Поместите этот тег после тега модуля Live Helper -->
-<script type="text/javascript">
-var LHCChatOptionsPage = {'height':300,'mobile':false};
-LHCChatOptionsPage.opt = {};
-(function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
-var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-po.src = '//wisetalk.space/index.php/rus/chat/getstatusembed/(department)/2?r='+referrer+'&l='+location;
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script>
-
-
-
-
-    <script type="text/javascript">
-        var LHCChatboxOptions = {hashchatbox:'empty',identifier:'default',status_text:'green'};
-        (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = '//wisetalk.space/index.php/rus/chatbox/getstatus/(position)/bottom_right/(top)/300/(units)/pixels/(width)/300/(height)/300/(chat_height)/220/(sc)/true';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-        </script>
     <script type="text/javascript">
         var LHCChatOptions = {};
         LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500,domain:'chumakovvchuma.github.io'};
@@ -40,16 +13,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
         var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
         var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-        po.src = '//wisetalk.space/index.php/rus/chat/getstatus/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(department)/1?r='+referrer+'&l='+location;
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-        </script>
-
-    <script>var LHC_API = LHC_API||{};
-        LHC_API.args = {mode:'widget',lhc_base_url:'//wisetalk.space/index.php/',wheight:450,wwidth:350,pheight:520,pwidth:500,fresh:true,department:[1],proactive:false,lang:'rus/'};
-        (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        var date = new Date();po.src = '//wisetalk.space/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
+        po.src = 'https://wisetalk.space/chat/getstatus/(click)/internal/(position)/bottom_left/(ma)/br/(top)/350/(units)/pixels/(department)/2/(theme)/1?r='+referrer+'&l='+location;
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
         })();
         </script>

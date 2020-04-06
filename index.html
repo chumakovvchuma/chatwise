@@ -6,13 +6,15 @@
     <title>Document</title>
 </head>
 <body style="background: green;">
-    <script>var LHC_API = LHC_API||{};
-        LHC_API.args = {mode:'widget',lhc_base_url:'//wisetalk.space/',wheight:450,wwidth:350,pheight:520,pwidth:500,domain:'chumakovvchuma.github.io/chatwise',fresh:true,department:[2],theme:1,check_messages:true};
-        (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        var date = new Date();po.src = 'https://wisetalk.space/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-        </script>
+    <!-- Start of Rocket.Chat Livechat Script -->
+<script type="text/javascript">
+    (function(w, d, s, u) {
+        w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+        var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+        j.async = true; j.src = 'http://localhost:3000/livechat/rocketchat-livechat.min.js?_=201903270000';
+        h.parentNode.insertBefore(j, h);
+    })(window, document, 'script', 'http://localhost:3000/livechat');
+    </script>
+    <!-- End of Rocket.Chat Livechat Script -->
 </body>
 </html>
